@@ -115,9 +115,7 @@ client.on("error", e => {
 
 client.login(ayarlar.token);
 //--------------------------------Oto Rol --------------------------------------\\
-client.on("guildMemberAdd", member => {
-  member.roles.add(macallan.Unregister); // UNREGİSTER ROLÜNÜN İDSİNİ GİRİN
-});
+
 client.on("guildMemberAdd", async (member) => {
   member.roles.add(macallan.Unregister)
   member.setNickname(macallan.nick)
